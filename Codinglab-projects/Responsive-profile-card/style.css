@@ -18,7 +18,7 @@ body {
 .upper {
     width:100%;
     height: 130px;
-    background-color: skyblue;
+    background-color: #4071ED;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
     display: flex;
@@ -41,7 +41,7 @@ body {
     width: 120px;
     border-radius: 50%;
     background-color: white;
-    border:2px solid skyblue;
+    border:2px solid #4071ED;
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -53,7 +53,7 @@ body {
     height: 112px;
     width: 112px;
     border-radius: 50%;
-    border:0.5px solid skyblue;
+    border:0.5px solid #4071ED;
     background-image: url(profilecard.jpg);
     background-size: cover;
 }
