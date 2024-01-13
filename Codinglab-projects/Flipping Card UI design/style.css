@@ -53,14 +53,30 @@ body {
     align-self: center;
     position: fixed;
     margin-left: 220px;
-    border-end-end-radius: 10%;
-    border-start-start-radius: 10%;
-    border-start-end-radius: 10%;
-    border-end-start-radius: 10%;
-    padding: 15px;
-    background-color: rgba(179, 190, 190, 0.158);
+    border-radius: 25px;
+    padding:11px;
+    background-color: rgba(255, 255,255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease 0.5s;
+    backface-visibility: hidden;
     backdrop-filter: blur(25px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.card:hover {
+    transform: rotateY(180deg);
+}
+ .card-back-face {
+    height:300px;
+    width: 570px;
+    z-index: 4;
+    align-self: flex-end;
+    position: absolute;
+    margin-left: 220px;
+    border-radius: 25px;
+    padding:11px;
+    background-color: rgba(255, 255,255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease 0.5s;
+    backdrop-filter: blur(25px);
 }
 .logo-chip {
     height:100px;
@@ -107,6 +123,7 @@ body {
     color:white;
     margin-left:20px;
     font-weight: 200;
+    letter-spacing: 1px;
 }
 .card-number h2 {
     margin-top:-15px;
