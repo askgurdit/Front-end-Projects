@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    background-color:#131322;
+    font-family: 'PT Sans Caption', sans-serif;
+}
+.workarea {
+    height:100vh;
+    width:100vw;
+}
+.workarea  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    height:100%;
+    width:70%;
+    /*border:2px solid white;
+    align-items: flex-start;*/
+    display: flex;
+    position:relative;
+}
+.circle1 {
+    height:350px;
+    width:350px;
+    background-color: #9F34AD;
+    border-radius: 50%;
+    align-self: flex-start;
+    margin-top: 65px;
+    margin-left:65px;
+    z-index: 1;
+    background-image: linear-gradient(to right, #9F34AD 15%, white);
+}
+
+.circle2 {
+    height: 350px;
+    width:350px;
+    background-color: #9F34AD;
+    border-radius: 50%;
+    align-self:flex-end;
+    margin-left:auto;
+    margin-right: 65px;
+    margin-bottom: 65px;
+    z-index: 1;
+    background-image: linear-gradient(to left, #9F34AD 15%, white);
+}
+.card {
+    height:300px;
+    width: 570px;
+    z-index: 5;
+    align-self: center;
+    position: fixed;
+    margin-left: 220px;
+    border-radius: 25px;
+    padding:11px;
+    background-color: rgba(255, 255,255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease 0.5s;
+    backface-visibility: hidden;
+    backdrop-filter: blur(25px);
+}
+.card:hover {
+    transform: rotateY(180deg);
+}
+ /*.card-back-face {
+    height:300px;
+    width: 570px;
+    z-index: 4;
+    align-self: flex-end;
+    position: absolute;
+    margin-left: 220px;
+    border-radius: 25px;
+    padding:11px;
+    background-color: rgba(255, 255,255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+    transition: transform 1s ease 0.5s;
+    backdrop-filter: blur(25px);
+}*/
+.logo-chip {
+    height:100px;
+    width:100%;
+    /*border:2px solid red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+.logo-text {
+    height: 65px;
+    width:100px;
+    background-image: url(https://logosmarcas.net/wp-content/uploads/2020/09/Mastercard-Logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+.chip {
+    height: 70px;
+    width: 125px;
+    background-image: url(chip.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: -20px;
+    }
+
+.logo-chip span {font-size:x-large;
+    color:white;
+    text-wrap: nowrap;
+    margin-right: 200px;
+    -webkit-text-stroke: 1px rgb(255,255,255);
+}
+.card-number {
+    font-family: 'PT Sans Caption', sans-serif;
+    height:100px;
+    width:100%;
+    /*border:2px solid red;*/
+    display: flex;
+    flex-direction: column;
+   justify-content:flex-start;
+    align-items:flex-start;
+    color:white;
+    margin-left:20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.card-number h2 {
+    margin-top:-15px;
+}
+.name-expiry {
+    height:100px;
+    width:100%;
+   /* border:2px solid white;*/
+    color:white;
+    font-weight: 200;
+    margin-left:20px;
+    display:flex;
+    justify-content:space-between;
+}
+.name-expiry .expiry {
+    margin-right: 30px;
+}
+.expiry h4 {
+    margin-bottom: -20px;
+}
